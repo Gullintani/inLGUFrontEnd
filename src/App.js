@@ -5,8 +5,8 @@ import './css/blocks.css'
 class App extends Component {
   render() {
     return (
-
-      <button className="btn btn-primary btn-md-2">Post Status</button>
+      
+      <button className="btn btn-primary btn-md-2">Postaa Status</button>
     );
   }
 }
