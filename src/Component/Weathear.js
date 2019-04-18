@@ -188,8 +188,8 @@ function Forecast(props) {
 
 function Date(props) {
 	return (<div className="date-and-place">
-				<h5 className="date">Saturday, March 26th</h5>
-				<div className="place">San Francisco, CA</div>
+				<h5 className="date">{props.date}</h5>
+				<div className="place">{props.location}</div>
 			</div>)
 }
 
@@ -201,8 +201,8 @@ class Weathear extends Component {
             	<a href="#" className="more"><svg className="olymp-three-dots-icon"><use xlinkHref="icons/icons.svg#olymp-three-dots-icon"></use></svg></a>
 				<Today current='64°' low='58°' high='76°' />
 				<Description climate='Partly Sunny' current='67°' chance='49%'/>
-				<Forecast />
-				<Date />
+				<Forecast/>
+				<Date date='Saturday, March 26th' location='San Francisco, CA'/>
 			</div>
         </div>
     );
